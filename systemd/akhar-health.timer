@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Akhar health check every minute
+[Timer]
+OnBootSec=45s
+OnUnitActiveSec=60s
+AccuracySec=10s
+Unit=akhar-health.service
+[Install]
+WantedBy=timers.target
